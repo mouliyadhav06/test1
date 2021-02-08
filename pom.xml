@@ -11,30 +11,15 @@
 
   <name>app Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
-	
-	
-	<distributionManagement>
-    <repository>
-        <id>releases</id>
-        <name>simple</name>
-        <url>http://172.31.41.118:8081/nexus/content/repositories/releases</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>simple</name>
-        <url>http://172.31.41.118:8081/nexus/content/repositories/snapshots</url>
-    </snapshotRepository>
-</distributionManagement>
-	
-	
+  <url>http://www.example.com</url>	
  
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <buildNumber>${env.BUILD_NUMBER}</buildNumber>
+	  
+	
      
   </properties>
 
@@ -52,6 +37,7 @@
     </dependency>
 
 	    <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+	  
 <dependency>
     <groupId>org.jacoco</groupId>
     <artifactId>jacoco-maven-plugin</artifactId>
